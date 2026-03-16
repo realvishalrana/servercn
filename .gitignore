@@ -1,6 +1,6 @@
 tests
 node_modules
-.env
 dist
 build
 TESTING.md
+config.bat

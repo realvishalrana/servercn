@@ -4,9 +4,9 @@
   "main": "dist/server.js",
   "type": "module",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development npx tsx watch src/server.ts",
-    "build": "tsc && tsc-alias",
-    "start": "cross-env NODE_ENV=production node dist/server.js",
+    "dev": "node init && cross-env NODE_ENV=development npx tsx watch src/server.ts",
+    "build": "node init && tsc && tsc-alias",
+    "start": "node init && cross-env NODE_ENV=production node dist/server.js",
     "typecheck": "tsc --noEmit",
     "db:push": "prisma db push",
     "db:studio": "prisma studio",
